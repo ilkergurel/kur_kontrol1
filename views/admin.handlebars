@@ -1,0 +1,14 @@
+{{#if has_data_kur}}
+    <p class=usdctry_sellRate>USDC/TRY Satış: {{prods.usdctry_sellRate}}</p>
+    <p class=usdtry_sellRate>USD /TRY Satış: {{prods.usdtry_sellRate}}</p>
+    <p class=pos_fark>Pozitif Fark: {{prods.pos_fark}}</p>
+    <p class=usdctry_buyRate>USDC/TRY Alış: {{prods.usdctry_buyRate}}</p>
+    <p class=usdtry_buyRate>USD /TRY Alış: {{prods.usdtry_buyRate}}</p>
+    <p class=neg_fark>Negatif Fark: {{prods.neg_fark}}</p>
+
+    <button type="button" onclick="window.location='http://localhost:3000/'">Güncelle</button>
+    </a>
+{{else}} 
+    <p>Veri Alınamıyor</p>
+
+{{/if}} 

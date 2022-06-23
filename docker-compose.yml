@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  kurlar:
+    build: .
+    container_name: ilker-kurlar
+    environment:
+      - MONGO_SERVER=ilker-mongodb
+      - MONGO_INITDB_DATABASE=kurlar
+    ports:
+      - "8081:8081"
+  db:
+    image: mongo:5.0.6
+    container_name: ilker-mongodb
+    environment:
+      - MONGO_INITDB_DATABASE=kurlar
+    ports:
+      - '27017:27017' 
